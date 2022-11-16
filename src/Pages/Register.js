@@ -6,7 +6,7 @@ const Register = () => {
     const [password, setPassword] = useState('')
     async function registerUser(e) {
         e.preventDefault();
-        const response = await fetch(`http://localhost:5000/auth/register`, {
+        const response = await fetch(`https://authentication-server.vercel.app/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

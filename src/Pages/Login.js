@@ -5,7 +5,7 @@ const Login = () => {
     const [password, setPassword] = useState('')
     async function loginUser(e) {
         e.preventDefault();
-        const response = await fetch(`http://localhost:5000/auth/login`, {
+        const response = await fetch(`https://authentication-server.vercel.app/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
